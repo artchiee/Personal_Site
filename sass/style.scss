@@ -1,0 +1,68 @@
+// Root (Cummon Colors)
+$bg_custom: darken, normal;
+$card_color: #191f1f;
+$main_color: #eee3e3;
+$description_job: #828282;
+
+// ----------- Starting View ------------->
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+// Navbar styling //
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
+
+.navbar-nav > li {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+// <---------- Background image ----------- >
+div .view {
+  background-blend-mode: $bg_custom;
+}
+// <------------------ Card Styling ---------------------- >
+.testimonial-card {
+  width: 371px;
+  height: 496px;
+}
+div .avatar > img {
+  border-radius: 20px;
+  transform: rotate(-0.32deg);
+}
+div .card {
+  background-color: $card_color;
+  background: rgba(25, 31, 31, 0.56);
+}
+
+// < ------------ Social ------------->
+.fab {
+  color: $main_color;
+}
