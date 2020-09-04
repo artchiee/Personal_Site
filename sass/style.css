@@ -44,7 +44,6 @@ div .view {
 
 .testimonial-card {
   width: 371px;
-  height: 496px;
 }
 
 div .avatar > img {
@@ -56,6 +55,85 @@ div .avatar > img {
 div .card {
   background-color: #191f1f;
   background: rgba(25, 31, 31, 0.56);
+}
+
+section#about {
+  background: #1f2929;
+}
+
+div.detail-inner > * {
+  padding: 8px;
+  font-family: Droid Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card-skill {
+  width: 150px;
+  /* Set width of cards */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Children use Flexbox */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Rotate Axis */
+  border: 1px solid #ef9a9a;
+  /* Set up Border */
+  border-radius: 4px;
+  /* Slightly Curve edges */
+  overflow: hidden;
+  /* Fixes the corners */
+  margin: 5px;
+  /* Add space between cards */
+}
+
+.card-header {
+  color: #d32f2f;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #ef9a9a;
+  background-color: #ffebee;
+  padding: 5px 10px;
+}
+
+.card-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Children use Flexbox */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Rotate Axis to Vertical */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Group Children in Center */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Group Children in Center (on cross axis) */
+  padding: 15px 0;
+  /* Add padding to the top/bottom */
+}
+
+.material-icons {
+  font-size: 36px;
+  color: #d32f2f;
+  margin-bottom: 5px;
+}
+
+.main-description {
+  color: #d32f2f;
+  font-size: 12px;
+  text-align: center;
 }
 
 .fab {

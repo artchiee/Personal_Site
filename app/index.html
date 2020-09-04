@@ -1,35 +1,27 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <!-- Css Imports -->
-    <link rel="stylesheet" href="../sass/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <!-- Bootstrap core CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Material Design Bootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
-      rel="stylesheet"
-    />
+  <!-- Css Imports -->
+<link rel="stylesheet" href="../sass/style.css" />
 
-    <!-- Different Width Grids 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Tailwind css -->
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+
+<!-- Different Width Grids 
     Different Width Grids : 
     Extra small devices ~ Phones (< 768px)
     Small devices ~ Tablets (>= 768px)
@@ -42,133 +34,205 @@
     col-md- ~ Medium devices
     col-lg- ~ Large devices
      -->
-  </head>
+</head>
 
-  <body>
-    <!-- Main navigation -->
-    <header>
-      <!--Navbar-->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
-      >
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent-7"
-            aria-controls="navbarSupportedContent-7"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <!-- Main navigation -->
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Full Page Intro -->
-      <div
-        class="view"
-        style="
+      </div>
+    </nav>
+    <!-- Full Page Intro -->
+    <div class="view" style="
           background-image: url('../assets/images/code2.jpg');
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center center;
-        "
-      >
-        <!-- Mask & flexbox options-->
-        <div
-          class="mask rgba-black-light d-flex justify-content-center align-items-center"
-        >
-          <!-- Card -->
-          <div class="card testimonial-card">
-            <!-- Background color -->
-            <div class="card-up"></div>
+        ">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+        <!-- Card -->
+        <div class="card testimonial-card">
+          <!-- Background color -->
+          <div class="card-up"></div>
 
-            <!-- Avatar -->
-            <div class="avatar mx-auto">
-              <img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
-                class="rounded-circle"
-                alt="DevAv"
-              />
+          <!-- Avatar -->
+          <div class="avatar mx-auto">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+              alt="DevAv" />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body card-body-cascade text-center">
+            <!-- Title -->
+            <h4 class="card-title white-text"><strong>Title </strong></h4>
+            <!-- Subtitle -->
+            <h5 class="blue-text pb-2"><strong> Job Description </strong></h5>
+            <!-- Text -->
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laborum ex error culpa doloremque similique quia aut numquam,
+              placeat ipsa, animi temporibus quos illo obcaecati rem vitae ?
+            </p>
+
+            <!-- once in mobile version display this data -->
+            <div id="mobile_active" class="py-4">
+              <button type="button" class="btn btn-outline-info btn-rounded waves-effect">
+                View Projects
+                <i class="fab fa-git-alt fa-lg text-success pl-3"></i>
+              </button>
+              <div>
+                <a class="px-2 fa-lg li-ic text-success">
+                  <i class="fas fa-angle-double-down"></i>
+                </a>
+              </div>
             </div>
 
-            <!-- Content -->
-            <div class="card-body card-body-cascade text-center">
-              <!-- Title -->
-              <h4 class="card-title white-text"><strong>Title </strong></h4>
-              <!-- Subtitle -->
-              <h5 class="blue-text pb-2"><strong> Job Description </strong></h5>
-              <!-- Text -->
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                laborum ex error culpa doloremque similique quia aut numquam,
-                placeat ipsa, animi temporibus quos illo obcaecati rem vitae ?
-              </p>
-
-              <!-- Linkedin -->
-              <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
-              <!-- Twitter -->
-              <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
-              <!-- Dribbble -->
-              <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
-            </div>
+            <!-- Linkedin -->
+            <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Twitter -->
+            <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
+            <!-- Dribbble -->
+            <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
           </div>
           <!-- Card -->
         </div>
         <!-- Mask & flexbox options-->
       </div>
-      <!-- Card information -->
+    </div>
 
-      <!-- Full Page Intro -->
-    </header>
+    <!-- Card information -->
 
-    <!-- ****************** ABout me Section ****************** -->
+    <!-- Full Page Intro -->
+  </header>
 
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <!-- Bootstrap tooltips -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-    ></script>
-    <!-- Bootstrap core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
-    ></script>
-    <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
-    ></script>
-  </body>
+  <!-- ********x********** ABout me Section **************x**** -->
+  <section id="about" class="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="main-title text-white py-4 m-auto">About</div>
+        <div class="about_description">
+          <strong class="text-success lg"> Hi ther I am </strong>
+          <p class="text-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas non,
+          aliquid quaerat autem earum soluta deserunt quod, qui impedit
+          molestias cum et. Voluptate magni dolor laboriosam iusto, debitis
+          quas consequatur. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Quam voluptatibus, sed illo tenetur est
+          dignissimos totam, recusandae natus rerum tgdfgdfg gfdgdfgdf impedit iste quae quo
+          eligendi provident a facere eius. Iste, mollitia?</p>
+        </div>
+
+        <!-- Detail left section  -->
+        <div class="col-lg-5 col-md-6 py-5">
+          <h2 class="pb-4 text-white">Detail</h2>
+          <div class="information">
+            <div class="detail-inner text-success">
+              <h2>Email :</h2>
+              <h2>Email :</h2>
+              <h2>Email :</h2>
+              <h2>Email :</h2>
+              <h2>Email :</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- small cards  -->
+        <div class="col-lg-7 col-md-6 py-3">
+            <div class="row">
+              <div class="card card-skill">
+                <div class="card-header">User Interface </div>
+                <div class="card-main">
+               <i class="fas fa-users-cog fa-4x text-white pb-4"></i>
+                  <div class="main-description">Creating Custom user Intefaces at your needs</div>
+                </div>
+              </div>
+              <div class="card card-skill">
+                <div class="card-header">Design (UI)</div>
+                <div class="card-main">
+                  <i class="material-icons">hot_tub</i>
+                  <div class="main-description">Hot Tub</div>
+                </div>
+              </div>
+              <div class="card card-skill">
+                <div class="card-header">Developpment</div>
+                <div class="card-main">
+                  <i class="material-icons">hot_tub</i>
+                  <div class="main-description">Hot Tub</div>
+                </div>
+              </div> <div class="card card-skill">
+                <div class="card-header">Clean Code </div>
+                <div class="card-main">
+                  <i class="material-icons">hot_tub</i>
+                  <div class="main-description">Hot Tub</div>
+                </div>
+              </div> <div class="card card-skill">
+                <div class="card-header">Automation </div>
+                <div class="card-main">
+                  <i class="material-icons">hot_tub</i>
+                  <div class="main-description">Hot Tub</div>
+                </div>
+              </div>
+            </div>    
+        </div>
+          <div class="my-links m-auto py-2 px-2">
+            <!-- Side by Side Button -->
+              <button type="button" class="hover:bg-dark-700 text-white font-bold py-2 px-4 rounded-full"><i class="far fa-arrow-alt-circle-down pr-2"  aria-hidden="true"></i>Get MY Resume </button>
+              <button type="button" class="btn btn-outline-info btn-primary"><i class="fas fa-envelope-open pr-2"  aria-hidden="true"></i>Contact Me </button>
+
+            </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ********x********** Services **************x**** -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+  <!-- Custom javascript -->
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
