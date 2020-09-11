@@ -1,27 +1,32 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Personal Website </title>
 
   <!-- Css Imports -->
-<link rel="stylesheet" href="../sass/style.css" />
+  <link rel="stylesheet" href="../sass/index/index.css" />
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
-<!-- Tailwind css -->
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Portfolio styling -->
 
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../sass/Portfolio-sample/portfolio.css" />
 
-<!-- Different Width Grids 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Tailwind css -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+
+  <!-- Different Width Grids 
     Different Width Grids : 
     Extra small devices ~ Phones (< 768px)
     Small devices ~ Tablets (>= 768px)
@@ -57,15 +62,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="#"> Blog </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -104,13 +109,12 @@
               placeat ipsa, animi temporibus quos illo obcaecati rem vitae ?
             </p>
 
-            <!-- once in mobile version display this data -->
             <div id="mobile_active" class="py-4">
               <button type="button" class="btn btn-outline-info btn-rounded waves-effect">
                 View Projects
                 <i class="fab fa-git-alt fa-lg text-success pl-3"></i>
               </button>
-              <div>
+              <div class="mt-3">
                 <a class="px-2 fa-lg li-ic text-success">
                   <i class="fas fa-angle-double-down"></i>
                 </a>
@@ -136,20 +140,23 @@
   </header>
 
   <!-- ********x********** ABout me Section **************x**** -->
-  <section id="about" class="about-me">
+  <section id="about" class="about-me section-padding">
     <div class="container">
       <div class="row">
-        <div class="main-title text-white py-4 m-auto">About</div>
+        <div class="main-title section-padding ">
+          <h3>About </h3>
+          <h2> Who am I || What Do I Do </h2>
+        </div>
         <div class="about_description">
           <strong class="text-success lg"> Hi ther I am </strong>
           <p class="text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas non,
-          aliquid quaerat autem earum soluta deserunt quod, qui impedit
-          molestias cum et. Voluptate magni dolor laboriosam iusto, debitis
-          quas consequatur. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Quam voluptatibus, sed illo tenetur est
-          dignissimos totam, recusandae natus rerum tgdfgdfg gfdgdfgdf impedit iste quae quo
-          eligendi provident a facere eius. Iste, mollitia?</p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas non,
+            aliquid quaerat autem earum soluta deserunt quod, qui impedit
+            molestias cum et. Voluptate magni dolor laboriosam iusto, debitis
+            quas consequatur. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Quam voluptatibus, sed illo tenetur est
+            dignissimos totam, recusandae natus rerum tgdfgdfg gfdgdfgdf impedit iste quae quo
+            eligendi provident a facere eius. Iste, mollitia?</p>
         </div>
 
         <!-- Detail left section  -->
@@ -168,48 +175,52 @@
 
         <!-- small cards  -->
         <div class="col-lg-7 col-md-6 py-3">
-            <div class="row">
-              <div class="card card-skill">
-                <div class="card-header">User Interface </div>
-                <div class="card-main">
-               <i class="fas fa-users-cog fa-4x text-white pb-4"></i>
-                  <div class="main-description">Creating Custom user Intefaces at your needs</div>
-                </div>
+          <div class="row">
+            <div class="card card-skill">
+              <div class="card-header">User Interface </div>
+              <div class="card-main">
+                <i class="fas fa-users-cog fa-4x text-white pb-4"></i>
+                <div class="main-description">Creating Custom user Intefaces at your needs</div>
               </div>
-              <div class="card card-skill">
-                <div class="card-header">Design (UI)</div>
-                <div class="card-main">
-                  <i class="material-icons">hot_tub</i>
-                  <div class="main-description">Hot Tub</div>
-                </div>
-              </div>
-              <div class="card card-skill">
-                <div class="card-header">Developpment</div>
-                <div class="card-main">
-                  <i class="material-icons">hot_tub</i>
-                  <div class="main-description">Hot Tub</div>
-                </div>
-              </div> <div class="card card-skill">
-                <div class="card-header">Clean Code </div>
-                <div class="card-main">
-                  <i class="material-icons">hot_tub</i>
-                  <div class="main-description">Hot Tub</div>
-                </div>
-              </div> <div class="card card-skill">
-                <div class="card-header">Automation </div>
-                <div class="card-main">
-                  <i class="material-icons">hot_tub</i>
-                  <div class="main-description">Hot Tub</div>
-                </div>
-              </div>
-            </div>    
-        </div>
-          <div class="my-links m-auto py-2 px-2">
-            <!-- Side by Side Button -->
-              <button type="button" class="hover:bg-dark-700 text-white font-bold py-2 px-4 rounded-full"><i class="far fa-arrow-alt-circle-down pr-2"  aria-hidden="true"></i>Get MY Resume </button>
-              <button type="button" class="btn btn-outline-info btn-primary"><i class="fas fa-envelope-open pr-2"  aria-hidden="true"></i>Contact Me </button>
-
             </div>
+            <div class="card card-skill">
+              <div class="card-header">Design (UI)</div>
+              <div class="card-main">
+                <i class="material-icons">hot_tub</i>
+                <div class="main-description">Hot Tub</div>
+              </div>
+            </div>
+            <div class="card card-skill">
+              <div class="card-header">Developpment</div>
+              <div class="card-main">
+                <i class="material-icons">hot_tub</i>
+                <div class="main-description">Hot Tub</div>
+              </div>
+            </div>
+            <div class="card card-skill">
+              <div class="card-header">Clean Code </div>
+              <div class="card-main">
+                <i class="material-icons">hot_tub</i>
+                <div class="main-description">Hot Tub</div>
+              </div>
+            </div>
+            <div class="card card-skill">
+              <div class="card-header">Automation </div>
+              <div class="card-main">
+                <i class="material-icons">hot_tub</i>
+                <div class="main-description">Hot Tub</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-links m-auto py-3 px-2">
+          <!-- Side by Side Button -->
+          <button type="button" class="hover:bg-dark-700 text-white font-bold py-2 px-4 rounded-full"><i
+              class="far fa-arrow-alt-circle-down pr-2" aria-hidden="true"></i>Get MY Resume </button>
+          <button type="button" class="btn btn-outline-info btn-primary"><i class="fas fa-envelope-open pr-2"
+              aria-hidden="true"></i>Contact Me </button>
+
+        </div>
 
       </div>
     </div>
@@ -218,8 +229,336 @@
   </section>
 
 
-  <!-- ********x********** Services **************x**** -->
+  <!-- ********x********** Portfolio Projects **************x**** -->
+  <section id="portfolio" class="portfolio section-padding pb-70">
+    <div class="container">
+      <div class="row">
+        <div class="main-title section-padding ">
+          <h3>Portfolio.</h3>
+          <h2> My Projects </h2>
+          	<p></p>
+        </div>
 
+        <div id="mod-sp-simpleportfolio" class="sp-simpleportfolio sp-simpleportfolio-view-items layout-gallery-space">
+          <div class="sp-simpleportfolio-filter">
+            <ul>
+              <li class="active" data-group="all"><a href="#">Show All</a></li>
+              <li data-group="brand"><a href="#">Brand</a></li>
+              <li data-group="design"><a href="#">Design</a></li>
+              <li data-group="graphic"><a href="#">Graphic</a></li>
+            </ul>
+          </div>
+
+          <iframe class="sp-simpleportfolio-lightbox" src="http://www.youtube.com/embed/k6Kly58LYzY" width="500" height="281" id="sp-simpleportfolio-video6" style="border:none;"></iframe>
+          <div class="sp-simpleportfolio-items sp-simpleportfolio-columns-3">
+            <div class="sp-simpleportfolio-item" data-groups='["brand"]'>
+              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+
+                <img class="sp-simpleportfolio-img" src="../assets/images/thumb-card5.png"
+                  alt="Project Title 1">
+
+                <div class="sp-simpleportfolio-overlay">
+                  <div class="sp-vertical-middle">
+                    <div>
+                      <h3 class="sp-simpleportfolio-title">
+                        <a href="component/spsimpleportfolio/item/1-project-title-1.html">
+                          Project Title 1 </a>
+                      </h3>
+                      <div class="sp-simpleportfolio-tags">
+                        Brand </div>
+                      <div class="sp-simpleportfolio-btns">
+                        <a class="btn-zoom" href="images/portfolio/1.jpg" data-featherlight="image"><i
+                            class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        <a class="btn-view" href="component/spsimpleportfolio/item/1-project-title-1.html"><i
+                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sp-simpleportfolio-item" data-groups='["design"]'>
+              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+
+                <img class="sp-simpleportfolio-img"  src="../assets/images/thumb-card5.png"
+                  alt="Project Title 2">
+
+                <div class="sp-simpleportfolio-overlay">
+                  <div class="sp-vertical-middle">
+                    <div>
+                      <h3 class="sp-simpleportfolio-title">
+                        <a href="component/spsimpleportfolio/item/2-project-title-2.html">
+                          Project Title 2 </a>
+                      </h3>
+                      <div class="sp-simpleportfolio-tags">
+                        Design </div>
+                      <div class="sp-simpleportfolio-btns">
+                        <a class="btn-zoom" href="images/portfolio/2.jpg" data-featherlight="image"><i
+                            class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        <a class="btn-view" href="component/spsimpleportfolio/item/2-project-title-2.html"><i
+                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sp-simpleportfolio-item" data-groups='["graphic"]'>
+              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+
+                <img class="sp-simpleportfolio-img"  src="../assets/images/thumb-card5.png"
+                  alt="Project Title 3">
+
+                <div class="sp-simpleportfolio-overlay">
+                  <div class="sp-vertical-middle">
+                    <div>
+                      <h3 class="sp-simpleportfolio-title">
+                        <a href="component/spsimpleportfolio/item/3-project-title-3.html">
+                          Project Title 3 </a>
+                      </h3>
+                      <div class="sp-simpleportfolio-tags">
+                        Graphic </div>
+                      <div class="sp-simpleportfolio-btns">
+                        <a class="btn-zoom" href="images/portfolio/3.jpg" data-featherlight="image"><i
+                            class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        <a class="btn-view" href="component/spsimpleportfolio/item/3-project-title-3.html"><i
+                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sp-simpleportfolio-item" data-groups='["brand"]'>
+              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+
+                <img class="sp-simpleportfolio-img" src="../assets/images/thumb-card5.png"
+                  alt="Project Title 4">
+
+                <div class="sp-simpleportfolio-overlay">
+                  <div class="sp-vertical-middle">
+                    <div>
+                      <h3 class="sp-simpleportfolio-title">
+                        <a href="component/spsimpleportfolio/item/4-project-title-4.html">
+                          Project Title 4 </a>
+                      </h3>
+                      <div class="sp-simpleportfolio-tags">
+                        Brand </div>
+                      <div class="sp-simpleportfolio-btns">
+                        <a class="btn-zoom" href="images/portfolio/4.jpg" data-featherlight="image"><i
+                            class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        <a class="btn-view" href="component/spsimpleportfolio/item/4-project-title-4.html"><i
+                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sp-simpleportfolio-item" data-groups='["graphic"]'>
+              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+
+                <img class="sp-simpleportfolio-img"  src="../assets/images/thumb-card5.png"
+                  alt="Project Title 5">
+
+                <div class="sp-simpleportfolio-overlay">
+                  <div class="sp-vertical-middle">
+                    <div>
+                      <h3 class="sp-simpleportfolio-title">
+                        <a href="component/spsimpleportfolio/item/5-project-title-5.html">
+                          Project Title 5 </a>
+                      </h3>
+                      <div class="sp-simpleportfolio-tags">
+                        Graphic </div>
+                      <div class="sp-simpleportfolio-btns">
+                        <a class="btn-zoom" href="images/portfolio/5.jpg" data-featherlight="image"><i
+                            class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        <a class="btn-view" href="component/spsimpleportfolio/item/5-project-title-5.html"><i
+                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sp-simpleportfolio-item" data-groups='["brand"]'>
+              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                <span class="sp-simpleportfolio-icon-video"></span>
+
+                <img class="sp-simpleportfolio-img" src="../assets/images/thumb-card5.png"
+                  alt="Project Title 6">
+
+                <div class="sp-simpleportfolio-overlay">
+                  <div class="sp-vertical-middle">
+                    <div>
+                      <h3 class="sp-simpleportfolio-title">
+                        <a href="component/spsimpleportfolio/item/6-project-title-6.html">
+                          Project Title 6 </a>
+                      </h3>
+                      <div class="sp-simpleportfolio-tags">
+                        Brand </div>
+                      <div class="sp-simpleportfolio-btns">
+                        <a class="btn-zoom" href="#" data-featherlight="#sp-simpleportfolio-video6"><i
+                            class="fa fa-video-camera" aria-hidden="true"></i></a>
+                        <a class="btn-view" href="component/spsimpleportfolio/item/6-project-title-6.html"><i
+                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ********x********** Blog(Coming Soon)**************x**** -->
+  <!-- TODO: Display grey Overlay => undicate coming soon -->
+
+  <section id="Blog" class="blog bg-gray-200">
+    <div class="container">
+      <div class="main-title section-padding ">
+        <h3> Blog </h3>
+        <h2>Latest Posts </h2>
+      </div>
+      <!-- Blog posts cards ; Might do H-scrolling later  -->
+      <div class="row">
+        <!-- item-1 -->
+        <div class="col-md-4">
+          <div class="post wow fadeInUp">
+            <div class="post-img">
+              <img src="../assets/images/bg_code.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="post-content">
+              <div class="post-title">
+                <a href="#">
+                  <h4> Title Blog goes here </h4>
+                </a>
+              </div>
+              <ul class="post-info list-unstyled mt-0">
+                <li class="fa fa-calendar"> <span> date here </span> </li>
+                <li class="fa fa-comments"> <span> Count Comments </span> </li>
+              </ul>
+              <div class="post-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aperiam, nulla. Vel odioi? Vel odioiVel odioiVel odioi</p>
+              </div>
+              <a href="#" class="post-more">Read more</a>
+            </div>
+            <div class="post-category">
+              <a href="#" class="text-gray-400">Design</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="post wow fadeInUp">
+            <div class="post-img">
+              <img src="../assets/images/bg_code.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="post-content">
+              <div class="post-title">
+                <a href="#">
+                  <h4> Title Blog goes here </h4>
+                </a>
+              </div>
+              <ul class="post-info list-unstyled mt-0">
+                <li class="fa fa-calendar"> <span> date here </span> </li>
+                <li class="fa fa-comments"> <span> Count Comments </span> </li>
+              </ul>
+              <div class="post-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aperiam, nulla. Vel odioi? Vel odioiVel odioiVel odioi</p>
+              </div>
+              <a href="#" class="post-more">Read more</a>
+            </div>
+            <div class="post-category">
+              <a href="#" class="text-gray-400">Design</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ********x********** Start-Contact **************x**** -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="main-title section-padding ">
+        <h3> Contact Me </h3>
+        <h2> Write Something to me </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <!-- TODO: setup Emailing -->
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name" name="name" required="">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" name="email" required="">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject" name="subject" required="">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" name="message" required=""></textarea>
+            </div>
+            <button type="button" class="btn btn-success btn-sm btn-rounded text-lg"><i
+                class="fas fa-paper-plane pr-2"></i>Send</button>
+          </form>
+        </div>
+
+        <!-- Side small cards information -->
+        <div class="col-md-4">
+          <div class="contact-boxes">
+            <div class="contact-box">
+              <span class="icon-box"><i class="fa fa-map-marker"></i></span>
+              <h4 class="title-box">Location</h4>
+              <div class="content-box">
+                <p>NewYork, USA</p>
+                <p>12 Street Name</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <span class="icon-box"><i class="fa fa-envelope"></i></span>
+              <h4 class="title-box">Email</h4>
+              <div class="content-box">
+                <p>Support@example.com</p>
+                <p>Support@example.com</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <span class="icon-box"><i class="fa fa-phone"></i></span>
+              <h4 class="title-box">Phone</h4>
+              <div class="content-box">
+                <p>+1 212 485-4512</p>
+                <p>+1 212 456-1478</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <span class="icon-box"><i class="fa fa-globe"></i></span>
+              <h4 class="title-box">Website</h4>
+              <div class="content-box">
+                <p>www.yourdomain.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -230,9 +569,11 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="../assets/components/jquery.shuffle.modernizr.min.js"></script>
 
   <!-- Custom javascript -->
-  <script src="../js/script.js"></script>
+  <script src="../js/projects_filter.js"></script>
+
 </body>
 
 </html>
