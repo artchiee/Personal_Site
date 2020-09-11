@@ -1,2 +1,6 @@
 .vscode/
+*.txt
+# ignore Custom 
 assets/ 
+js/email.js
+sass/devices/
