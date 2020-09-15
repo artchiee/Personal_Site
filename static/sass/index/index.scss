@@ -90,6 +90,7 @@ img {
   width: 20px;
   height: 2px;
 }
+
 // ----------- Starting View ------------->
 html,
 body,
@@ -115,6 +116,13 @@ header,
   }
 }
 
+// Full page intro
+div.view {
+  background-image: url("/static/images/code2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 // Navbar styling //
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
@@ -549,6 +557,9 @@ div.detail-inner > * {
   font-weight: 600;
   color: #a2a2a2;
   letter-spacing: 1px;
+  text-align: center;
+}
+.goup > * {
   text-align: center;
 }
 
