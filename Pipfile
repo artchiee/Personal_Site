@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 flask-wtf = "~=0.14.3"
 flask = "~=1.1.2"
+flask-mail = "~=0.9.1"
 
 [requires]
 python_version = "3.8"
