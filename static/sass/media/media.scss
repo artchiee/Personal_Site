@@ -1,0 +1,85 @@
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+// if max-width(?) delete side img and append remaining section
+@media screen and (max-width: 768px) {
+  .bg-cover {
+    display: none;
+  }
+  .countdown-wrap {
+    background-image: url("/static/images/bg_code.jpg");
+    background-size: cover;
+    background-blend-mode: difference;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .display-t .display-tc h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .display-t .display-tc h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .display-t .display-tc h1 {
+    font-size: 22px;
+  }
+}
+.display-t .display-tc h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .display-t .display-tc h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .countdown-wrap,
+  .bg-cover {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .countdown-wrap,
+  .bg-cover {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #fh5co-header-subscribe #email {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center !important;
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header-subscribe button {
+    width: 90%;
+    margin: 0 auto;
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+  }
+}

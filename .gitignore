@@ -1,6 +1,4 @@
 .vscode/
 *.txt
 # Custom ignores 
-static/images/
-static/js/email.js
-static/sass/devices/
+static/images/*

@@ -57,9 +57,9 @@ function modular_ajax(url, type, formData) {
     contentType: false,
     beforeSend: function () {
       // show the preloader (progress bar)
-      $("#form-response").html(
-        "<div class='progress'><div class='indeterminate'></div></div>"
-      );
+      // $("#form-response").html(
+      //   "<div class='progress'><div class='indeterminate'></div></div>"
+      // );
     },
     complete: function () {
       // hide the preloader (progress bar)
@@ -86,8 +86,13 @@ function modular_ajax(url, type, formData) {
   }).done(function () {
     // clear fields and back to top
     setTimeout(function () {
-      // wait for 5 sec
+      // Back to top
+      $(document).ready(function () {
+        $(this).scrollTop(0);
+      });
+      // wait for (x) sec
       window.location.reload();
+      // TODO: Throw message => email sentw
     }, 3000);
     console.log("data sent");
   });
