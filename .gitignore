@@ -1,7 +1,8 @@
 .vscode/
 *.txt
+#do not ignore this file
+!requirements.txt
 *.json
 config.py
 # Custom ignores 
-static/images/*
 templates/test.html
