@@ -1,7 +1,9 @@
 .vscode/
 *.txt
 #do not ignore this file
+!runtime.txt
 !requirements.txt
+
 *.json
 config.py
 # Custom ignores 
