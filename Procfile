@@ -1,1 +1,1 @@
-web: gunicorn run:validation.app
+web: gunicorn run:app
