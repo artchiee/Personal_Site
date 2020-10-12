@@ -1,4 +1,3 @@
-# initiat project by running python run.py
 from validation import app
 import os
 
