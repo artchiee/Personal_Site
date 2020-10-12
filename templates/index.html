@@ -83,19 +83,28 @@
     </nav>
     <!-- Full Page Intro -->
     <div class="view wow fadeIn dark_bg" id="home">
-       <div id="particles-js"></div>
+      <!-- Flash messgaes on success/danger -->
+      {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      {% for category, message in messages %}
+      <div class="alert {{ category }}"> {{ message|capitalize }} </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+
+      <div id="particles-js"></div>
       <!-- Mask & flexbox options-->
       <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
         <!-- Card -->
-          <!-- Card -->
-                <div class="card testimonial-card wow zoomIn my-6" data-tilt="" style="will-change: transform; transform: perspective(300px)
+        <!-- Card -->
+        <div class="card testimonial-card wow zoomIn my-6" data-tilt="" style="will-change: transform; transform: perspective(300px)
                   rotateX(0deg) rotateY(0deg);">
           <!-- Background color -->
           <div class="card-up"></div>
 
           <!-- Avatar -->
           <div class="avatar mx-auto">
-           <div class="circle-ripple"></div>
+            <div class="circle-ripple"></div>
             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
               alt="DevAv" />
           </div>
@@ -103,10 +112,10 @@
           <!-- Content -->
           <div class="card-body card-body-cascade text-center">
             <!-- Title -->
-            <h4 class="card-title"><strong> Title</strong></h4>
+            <h4 class="card-title"><strong> NouamaneZH</strong></h4>
             <!-- Subtitle -->
 
-            <h5 class="pb-2 card-subtitle text-white"><strong> Job Description </strong></h5>
+            <h5 class="pb-2 card-subtitle text-white"><strong> Software Developer </strong></h5>
             <!-- Text -->
             <p class="card-text my_resume">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
@@ -239,60 +248,60 @@
   <!-- ********x********** Portfolio Projects **************x**** -->
   <section id="portfolio" class="portfolio section-padding pb-70 dark_bg">
     <div class="container">
-    
-        <div class="main-title section-padding ">
-          <h3> Portfolio </h3>
-          <h2> My Projects </h2>
 
+      <div class="main-title section-padding ">
+        <h3> Portfolio </h3>
+        <h2> My Projects </h2>
+
+      </div>
+
+      <div id="mod-sp-simpleportfolio" class="sp-simpleportfolio sp-simpleportfolio-view-items layout-gallery-space">
+        <div class="sp-simpleportfolio-filter wow fadeInUp">
+          <ul>
+            <li class="active" data-group="all"><a href="#">Show All</a></li>
+            <li data-group="brand"><a href="#">Automation</a></li>
+            <li data-group="design"><a href="#">Websites</a></li>
+            <li data-group="graphic"><a href="#">Mobile</a></li>
+          </ul>
         </div>
 
-        <div id="mod-sp-simpleportfolio" class="sp-simpleportfolio sp-simpleportfolio-view-items layout-gallery-space">
-          <div class="sp-simpleportfolio-filter wow fadeInUp">
-            <ul>
-              <li class="active" data-group="all"><a href="#">Show All</a></li>
-              <li data-group="brand"><a href="#">Automation</a></li>
-              <li data-group="design"><a href="#">Websites</a></li>
-              <li data-group="graphic"><a href="#">Mobile</a></li>
-            </ul>
-          </div>
+        <iframe class="sp-simpleportfolio-lightbox" width="500" height="281" id="sp-simpleportfolio-video6"
+          style="border:none;"></iframe>
 
-          <iframe class="sp-simpleportfolio-lightbox" width="500" height="281" id="sp-simpleportfolio-video6"
-            style="border:none;"></iframe>
+        <div class="sp-simpleportfolio-items sp-simpleportfolio-columns-3 wow fadeInUp">
 
-          <div class="sp-simpleportfolio-items sp-simpleportfolio-columns-3 wow fadeInUp">
+          <div class="sp-simpleportfolio-item" data-groups='["brand"]'>
+            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
 
-            <div class="sp-simpleportfolio-item" data-groups='["brand"]'>
-              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+              <img class="sp-simpleportfolio-img" src="{{ url_for('static', filename='images/bg_portfolio.jpeg')}}"
+                alt=" Project Title 1">
 
-                <img class="sp-simpleportfolio-img" src="{{ url_for('static', filename='images/bg_portfolio.jpeg')}}"
-                            alt=" Project Title 1">
+              <div class="sp-simpleportfolio-overlay">
+                <div class="sp-vertical-middle">
+                  <div>
+                    <h3 class="sp-simpleportfolio-title">
 
-                <div class="sp-simpleportfolio-overlay">
-                  <div class="sp-vertical-middle">
-                    <div>
-                      <h3 class="sp-simpleportfolio-title">
+                      <a>Blog Porject</a>
+                    </h3>
 
-                        <a>Blog Porject</a>
-                      </h3>
-
-                      <!-- Built with  -->
-                      <div class="sp-simpleportfolio-tags text-success">
-                        Python / Django .. </div>
-                      <div class="sp-simpleportfolio-btns">
-                        <a class="btn-view"><i class="fas fa-code-branch"></i></a>
-                         <a class="btn-view"><i class="far fa-eye"></i></a>
-                      </div>
+                    <!-- Built with  -->
+                    <div class="sp-simpleportfolio-tags text-success">
+                      Python / Django .. </div>
+                    <div class="sp-simpleportfolio-btns">
+                      <a class="btn-view"><i class="fas fa-code-branch"></i></a>
+                      <a class="btn-view"><i class="far fa-eye"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
 
           </div>
 
         </div>
-     
+
+      </div>
+
     </div>
   </section>
 
@@ -371,7 +380,7 @@
 
             </div>
             <div class="form-group">
-              {{ form.email(class_="form-control", placeholder="Email" ) }}
+              {{ form.user_mail(class_="form-control", placeholder="Email" ) }}
               <label for="mail-address"></label>
             </div>
             <div class="form-group">
@@ -423,7 +432,7 @@
               </div>
             </div>
           </div>
-         
+
         </div>
       </div>
     </div>
@@ -480,7 +489,7 @@
 
 
   <!-- ********** Scripts to load ******************  -->
-  
+
   <!-- Projects filtering  -->
   <script src="{{url_for('static', filename = 'components/jquery.shuffle.modernizr.min.js') }}"></script>
 
@@ -490,8 +499,8 @@
   <!-- Wow -->
   <script src="{{url_for('static', filename ='components/wow.min.js') }}"></script>
 
-    <!-- particles / canvas -->
-    <script src="{{ url_for('static', filename = 'components/particles.min.js') }}"></script>
+  <!-- particles / canvas -->
+  <script src="{{ url_for('static', filename = 'components/particles.min.js') }}"></script>
   <script src="{{ url_for('static', filename = 'components/canvas.js') }}"></script>
 
   <!-- smooth scrolling to nav secion  -->
