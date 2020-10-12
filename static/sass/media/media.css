@@ -21,7 +21,7 @@
     display: none;
   }
   .countdown-wrap {
-    background-image: url("./posters/bg_code.jpg");
+    background-image: url("/static/images/bg_code.jpg");
     background-size: cover;
     background-blend-mode: difference;
   }

@@ -79,7 +79,7 @@ function modular_ajax(url, type, formData) {
 
     error: function (xhr) {
       console.log("error. see details below.");
-      console.log(xhr.status + ": " + xhr.responseText);
+      console.log("status \n", xhr.status + ": " + xhr.responseText);
       toast_error_msg = "An error occured";
       toast_category = "danger";
     },
@@ -92,7 +92,6 @@ function modular_ajax(url, type, formData) {
       });
       // wait for (x) sec
       window.location.reload();
-      // TODO: Throw message => email sentw
     }, 3000);
     console.log("data sent");
   });

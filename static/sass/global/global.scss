@@ -126,3 +126,13 @@ img {
 .btn-outline-info {
   border: 2px solid #08d665 !important;
 }
+
+// Alerts
+.alert.success {
+  background-color: green;
+  margin-top: 50px;
+  width: 20%;
+  float: right;
+  margin-right: 15px;
+  border-radius: 25px;
+}
