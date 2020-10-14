@@ -12,7 +12,7 @@ class ContactForm(FlaskForm):
     name = StringField('Name', 
             [validators.DataRequired()])
 
-    user_mail = EmailField('Email', [validators.DataRequired()], default='amory.brit@easysetting.org')
+    user_mail = EmailField('Email', [validators.DataRequired()])
 
     subject = TextField("Subject")
     message = TextAreaField("Message",[validators.DataRequired()])
