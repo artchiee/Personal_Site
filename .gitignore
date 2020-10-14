@@ -5,6 +5,6 @@
 !requirements.txt
 
 *.json
-config.py
+#config.py
 # Custom ignores 
 templates/test.html
