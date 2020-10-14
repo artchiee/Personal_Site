@@ -325,9 +325,10 @@
                     <h2> This Section opens Soon<br> Register to notify once it goes live
                     </h2>
                     <form class="form-inline " id="fh5co-header-subscribe">
+                    {{ form.csrf_token() }}
                       <div class="col-md-12 col-md-offset-0">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="email" placeholder="Get notify by email">
+                         {{ form.user_mail(class_="form-control blog_mail",placeholder="Get notify by email" ) }}
 
                         </div>
                       </div>
