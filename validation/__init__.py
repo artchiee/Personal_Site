@@ -14,7 +14,6 @@ else:
 # check wich ENV running whene server starts
 print(f'ENV is set to: {app.config["ENV"]}')
 
-
 # register static directory
 app._static_folder = '../static'
  
