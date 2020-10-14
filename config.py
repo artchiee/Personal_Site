@@ -2,7 +2,7 @@ import os
 
 class Config(object):
     DEBUG = False
-    SECRET_KEY = os.environ['Key']
+    SECRET_KEY = os.environ.get('Key')
     
     # check secret key
     if not SECRET_KEY:
