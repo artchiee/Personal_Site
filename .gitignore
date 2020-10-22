@@ -8,3 +8,6 @@
 #config.py
 # Custom ignores 
 templates/test.html
+
+#uncomment on heroku push
+/static/images/heroo.jpeg

@@ -136,3 +136,10 @@ img {
   margin-right: 15px;
   border-radius: 25px;
 }
+//
+div > mark {
+  background-color: #64947b;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: bold;
+}

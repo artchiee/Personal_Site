@@ -37,7 +37,7 @@ def contact():
         msg = EmailMessage()
         msg['Subject'] = subject
         msg['From'] = user_email  #sender
-        msg['To'] = mail_address  #rec.ipients
+        msg['To'] = mail_address  #recipients
 
         msg.set_content(
           "email : {} \n subject : {} \n message : {}".format(user_email, subject, message)

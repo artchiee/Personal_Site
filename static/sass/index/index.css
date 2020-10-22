@@ -265,6 +265,12 @@ div .avatar > img {
           transform: rotate(-0.32deg);
 }
 
+img.rounded-circle {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+}
+
 div .card {
   background-color: #191f1f;
   background: rgba(25, 31, 31, 0.56);
