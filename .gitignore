@@ -11,3 +11,8 @@
 
 #uncomment on heroku Push
 /static/images/heroo.jpeg
+
+# untra  ck on master branch
+Procfile
+runtime.txt
+static/images/
