@@ -274,6 +274,9 @@ img.rounded-circle {
 div .card {
   background-color: #191f1f;
   background: rgba(25, 31, 31, 0.56);
+  margin: 0px auto;
+  margin-top: 100px;
+  padding: 70px 0 0;
 }
 
 .db_common_text strong {

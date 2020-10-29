@@ -1,4 +1,7 @@
-from flask import Flask,flash , render_template, make_response, jsonify, request, Blueprint, json
+from flask import (
+  Flask, flash, render_template,
+   make_response, jsonify, redirect, url_for,
+   request, Blueprint, json, send_file)
 from .forms import ContactForm
 from flask_wtf.csrf import CSRFProtect
 from flask_mail import Mail
@@ -11,7 +14,7 @@ from email.message import EmailMessage
 
 Contact = Blueprint('contact',
                     __name__,
-                    template_folder='../templates')
+                    template_folder='../static/templates')
 
 Portfolio = Flask(__name__)
 mail = Mail(Portfolio)
@@ -65,6 +68,13 @@ def contact():
     # print('get')
     return render_template('index.html', form=form)
 
+
+# # read pdf resume file
+# @Contact.route('/serve_files/')
+# def display_files():
+#   # path to file
+#   file_to_open = "images/ResumeV2.png"
+#   return redirect(url_for('static', filename=file_to_open), code=301)
 
 # #-----------#TODO: DElete
 # # subclass JSONEncoder

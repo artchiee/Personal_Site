@@ -7,7 +7,7 @@
 *.json
 #config.py
 # Custom ignores 
-templates/test.html
+/static/templates/test.html
 
-#uncomment on heroku push
+#uncomment on heroku Push
 /static/images/heroo.jpeg

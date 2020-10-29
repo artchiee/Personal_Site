@@ -1,42 +1,10 @@
-// projects portfolio feltiring
-jQuery(function ($) {
-  var $container = $(".sp-simpleportfolio-items");
-
-  $(window).ready("onload", function () {
-    var $sizer = $container.find(".shuffle__sizer");
-
-    $container.shuffle({
-      itemSelector: ".sp-simpleportfolio-item",
-      sequentialFadeDelay: 150,
-      sizer: $sizer,
-    });
-  });
-
-  // appply Filters
-  $(".sp-simpleportfolio-filter li a").on("click", function (event) {
-    event.preventDefault();
-    var $self = $(this);
-    var $this = $(this).parent();
-
-    if ($this.hasClass("active")) {
-      return;
-    }
-
-    $self.closest("ul").children().removeClass("active");
-    $self.parent().addClass("active");
-
-    var $local = $self
-      .closest(".sp-simpleportfolio")
-      .children(".sp-simpleportfolio-items");
-
-    $local.shuffle("shuffle", $this.data("group"));
-  });
+// FadeIn animation on document load
+/* WOW ANIMATE JS */
+wow = new WOW({
+  animateClass: "animated",
+  offset: 100,
 });
-// // Scrolling top (smooth scrolling)
-// jQuery(window).on("load", function () {
-//   // Preloader
-//   jQuery(".loading").addClass("loading-end").fadeOut(1000);
-// });
+wow.init();
 
 jQuery(document).ready(function () {
   jQuery(window).scroll(function () {
@@ -53,14 +21,6 @@ jQuery(document).ready(function () {
 });
 
 //    ------------------------------------
-// FadeIn animation on document load
-/* WOW ANIMATE JS */
-wow = new WOW({
-  animateClass: "animated",
-  offset: 100,
-});
-wow.init();
-/* WOW ANIMATE JS */
 
 //<------------- Navbar Styling -------->
 // when scroll to (x) changle navbar coloring
@@ -151,3 +111,43 @@ $(window).scroll(function () {
   }
 });
 // <------------- End of Navbar Stylign  -------->
+
+// projects portfolio feltiring
+jQuery(function ($) {
+  var $container = $(".sp-simpleportfolio-items");
+
+  $(window).ready("onload", function () {
+    var $sizer = $container.find(".shuffle__sizer");
+
+    $container.shuffle({
+      itemSelector: ".sp-simpleportfolio-item",
+      sequentialFadeDelay: 150,
+      sizer: $sizer,
+    });
+  });
+
+  // appply Filters
+  $(".sp-simpleportfolio-filter li a").on("click", function (event) {
+    event.preventDefault();
+    var $self = $(this);
+    var $this = $(this).parent();
+
+    if ($this.hasClass("active")) {
+      return;
+    }
+
+    $self.closest("ul").children().removeClass("active");
+    $self.parent().addClass("active");
+
+    var $local = $self
+      .closest(".sp-simpleportfolio")
+      .children(".sp-simpleportfolio-items");
+
+    $local.shuffle("shuffle", $this.data("group"));
+  });
+});
+
+//--------- Flask message hide after x time
+setTimeout(function () {
+  $("#return_msg").fadeOut("fast");
+}, 30000);

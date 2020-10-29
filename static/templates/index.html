@@ -5,16 +5,17 @@
 
   <!-- meta secure tag -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Website </title>
+  
+  <!-- global css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'sass/global/global.css')}}" />
 
-  <!-- Css page style -->
+  <!-- Css index -->
   <link rel="stylesheet" href="{{ url_for('static', filename = 'sass/index/index.css')}}" />
 
-  <!-- Css page style -->
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'sass/global/global.css')}}" />
 
   <!-- Portfolio styling -->
   <link rel="stylesheet" href="{{ url_for('static', filename = 'sass/Portfolio_sample/portfolio.css') }}" />
@@ -92,7 +93,7 @@
       {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
       {% for category, message in messages %}
-      <div class="alert {{ category }}"> {{ message|capitalize }} </div>
+      <div id="return_msg" class="alert {{ category }}"> {{ message|capitalize }} </div>
       {% endfor %}
       {% endif %}
       {% endwith %}
@@ -175,7 +176,7 @@
             <div class="db_about_text_wapper db_common_text wow fadeInUp text-white"> <strong>Hi There, I’am
                 NouamaneZH</strong>
               based from Morocco, I love to write code. Focusing more on <mark>Web Developpemnt </mark>, and a little on
-              Mobile Application with <mark> Flutter</mark>
+              Mobile Application with <mark> Flutter</mark>.
               Main Programming languages include Python (Flask | Django, Automation),JS, and other Web utilities.
             </div>
           </div>
@@ -228,11 +229,14 @@
           </div>
         </div>
         <div class="m-auto my-links">
-          <div class="db_download_cv_button wow fadeInUp py-2 px-4"> <a href="#" class="btn01 btn_borders"> Get MY
-              Resume
-              <i class="fa fa-download"></i> </a> </div>
+          <div class="db_download_cv_button wow fadeInUp py-2 px-4 "> 
+          <a href="#contact" 
+          class="btn01 btn_borders text-white"> Personal Resume<i class="fa fa-download px-2"></i> </a>
+            <!--  iframe to view resume/disable download -->
+          </div>
+
           <div class="db_download_cv_button wow fadeInUp"> <a href="#contact" class="btn01 btn_borders"> Contact Me <i
-                class="fas fa-envelope-open pr-2"></i></a> </div>
+                class="fas fa-envelope-open px-2"></i></a> </div>
 
         </div>
 
@@ -279,14 +283,15 @@
                   <div>
                     <h3 class="sp-simpleportfolio-title">
 
-                      <a href="https://github.com/Nouamanezh909/Moviesio">Moviesio</a>
+                      <a>Moviesio</a>
                     </h3>
 
                     <!-- Built with  -->
                     <div class="sp-simpleportfolio-tags text-success">
                       Python / Flask .. </div>
                     <div class="sp-simpleportfolio-btns">
-                      <a class="btn-view"><i class="fas fa-code-branch"></i></a>
+                      <a href="https://github.com/Nouamanezh909/Moviesio" class="btn-view"><i
+                          class="fas fa-code-branch"></i></a>
                       <!-- <a class="btn-view"><i class="far fa-eye"></i></a> -->
                     </div>
                   </div>
@@ -305,14 +310,15 @@
                   <div>
                     <h3 class="sp-simpleportfolio-title">
 
-                      <a href="https://github.com/Nouamanezh909/BLog_repo"> Blog </a>
+                      <a> Blog </a>
                     </h3>
 
                     <!-- Built with  -->
                     <div class="sp-simpleportfolio-tags text-success">
                       Python / Django .. </div>
                     <div class="sp-simpleportfolio-btns">
-                      <a class="btn-view"><i class="fas fa-code-branch"></i></a>
+                      <a href="https://github.com/Nouamanezh909/BLog_repo" class="btn-view"><i
+                          class="fas fa-code-branch"></i></a>
                     </div>
                   </div>
                 </div>
@@ -330,14 +336,15 @@
                   <div>
                     <h3 class="sp-simpleportfolio-title">
 
-                      <a href="https://github.com/Nouamanezh909/BLog_repo"> Indeed automation/scrapping </a>
+                      <a> Indeed automation/scrapping </a>
                     </h3>
 
                     <!-- Built with  -->
                     <div class="sp-simpleportfolio-tags text-success">
                       Python / Selenium .. </div>
                     <div class="sp-simpleportfolio-btns">
-                      <a class="btn-view"><i class="fas fa-code-branch"></i></a>
+                      <a href="https://github.com/Nouamanezh909/job_hunt" class="btn-view"><i
+                          class="fas fa-code-branch"></i></a>
                     </div>
                   </div>
                 </div>
@@ -557,12 +564,6 @@
 
   <!-- ********** Scripts to load ******************  -->
 
-  <!-- Projects filtering  -->
-  <script src="{{url_for('static', filename = 'components/jquery.shuffle.modernizr.min.js') }}"></script>
-
-  <!-- flashy(glowing around avatar) -->
-  <script src="{{url_for('static', filename = 'components/jquery.flashy.min.js') }}"></script>
-
   <!-- Wow -->
   <script src="{{url_for('static', filename ='components/wow.min.js') }}"></script>
 
@@ -570,22 +571,28 @@
   <script src="{{ url_for('static', filename = 'components/particles.min.js') }}"></script>
   <script src="{{ url_for('static', filename = 'components/canvas.js') }}"></script>
 
+  <!-- flashy(glowing around avatar) -->
+  <script src="{{url_for('static', filename = 'components/jquery.flashy.min.js') }}"></script>
+
+  <!-- scrollIt -->
+  <script src="{{url_for('static', filename = 'components/scrollIt.min.js') }}"></script>
+
   <!-- smooth scrolling to nav secion  -->
   <script src="{{url_for('static', filename = 'components/jquery.nav.js') }}"></script>
 
   <script src="{{url_for('static', filename = 'components/smooth-scroll.js') }}"></script>
 
-  <!-- scrollIt -->
-  <script src="{{url_for('static', filename = 'components/scrollIt.min.js') }}"></script>
 
-
+  <!-- Projects filtering  -->
+  <script src="{{url_for('static', filename = 'components/jquery.shuffle.modernizr.min.js') }}"></script>
 
   <!-- Custom javascript -->
+  <script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js') }}">
+  </script>
+
   <script type="text/javascript" src="{{ url_for('static', filename = 'js/form_validation.js') }}">
   </script>
 
-  <script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js') }}">
-  </script>
 
 
 </body>
