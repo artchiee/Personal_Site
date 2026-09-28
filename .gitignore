@@ -6,6 +6,16 @@ __pycache__
 !runtime.txt
 !requirements.txt
 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
 *.json
 #config.py
 # Custom ignores 
@@ -13,3 +23,8 @@ __pycache__
 
 #uncomment on heroku Push
 /static/images/heroo.jpeg
+
+# untrack on master branch
+Procfile
+runtime.txt
+static/images/
