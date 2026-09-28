@@ -1,5 +1,7 @@
 .vscode/
 *.txt
+__pycache__
+
 #do not ignore this file
 !runtime.txt
 !requirements.txt
